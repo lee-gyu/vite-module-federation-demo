@@ -1,0 +1,16 @@
+packages:
+  - apps/*
+  - packages/*
+
+# 모든 앱이 같은 버전을 쓰도록 catalog 로 버전을 한 곳에서 관리합니다.
+# (Module Federation 의 shared 버전 협상이 단순해집니다)
+catalog:
+  "@module-federation/vite": ^1.24.1
+  "@types/node": ^24.19.2
+  "@types/react": ^19.3.0
+  "@types/react-dom": ^19.3.0
+  "@vitejs/plugin-react": ^6.3.0
+  react: ^19.3.1
+  react-dom: ^19.3.1
+  typescript: ^7.0.2
+  vite: ^8.3.8

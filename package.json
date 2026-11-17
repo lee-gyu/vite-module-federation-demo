@@ -1,0 +1,17 @@
+{
+  "name": "vite-module-federation-demo",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.6.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build:packages": "pnpm --filter \"./packages/*\" build",
+    "dev": "pnpm build:packages && pnpm --parallel --filter \"./apps/*\" dev",
+    "build": "pnpm build:packages && pnpm --filter \"./apps/*\" build",
+    "preview": "pnpm --parallel --filter \"./apps/*\" preview",
+    "typecheck": "pnpm -r typecheck",
+    "clean": "pnpm -r exec rm -rf dist @mf-types .mf node_modules/.vite node_modules/.tmp"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "types": ["vite/client"],
+    // dts 플러그인이 내려받은 remote 타입(@mf-types)으로 `products/*`, `cart/*` import 를 해석합니다.
+    "paths": {
+      "*": ["./@mf-types/*"]
+    }
+  },
+  "include": ["src"]
+}

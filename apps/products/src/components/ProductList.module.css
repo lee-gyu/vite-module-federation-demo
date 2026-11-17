@@ -1,0 +1,57 @@
+.wrapper {
+  border: 2px dashed #3b82f6;
+  border-radius: 12px;
+  padding: 16px;
+  background: #eff6ff;
+}
+
+.badge {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #3b82f6;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+}
+
+.emoji {
+  font-size: 32px;
+}
+
+.price {
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+.button {
+  margin-top: auto;
+  padding: 8px;
+  border: 0;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #1d4ed8;
+}
