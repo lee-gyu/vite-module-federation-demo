@@ -155,6 +155,7 @@ remote 서버는 host 도메인에서 요청할 수 있도록 CORS를 허용해�
 
 ## 참고 문서
 
+- 자주 묻는 질문(정적 배포, 설정 항목 설명): [QnA.md](QnA.md)
 - Module Federation 소개: https://module-federation.io/guide/start/index.html
 - Vite 통합: https://module-federation.io/integrations/build-tool/vite.html
 - 공식 Vite 예제 모음: https://github.com/gioboa/module-federation-vite-examples
